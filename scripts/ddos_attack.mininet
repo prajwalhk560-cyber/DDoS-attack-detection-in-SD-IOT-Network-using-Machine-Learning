@@ -1,0 +1,16 @@
+# DDoS Attack Simulation Script for Mininet CLI
+# Launches UDP flood from h1–h4 to victim h5
+
+echo "=== 🚀 Starting DDoS Simulation ==="
+
+# Start UDP server on victim
+h5 iperf -s -u &
+
+# Launch simultaneous UDP floods from 4 attackers
+h1 iperf -c 10.0.0.5 -u -b 5000M -t 300 &
+h2 iperf -c 10.0.0.5 -u -b 5000M -t 300 &
+h3 iperf -c 10.0.0.5 -u -b 5000M -t 300 &
+h4 iperf -c 10.0.0.5 -u -b 5000M -t 300 &
+
+echo "=== 💣 UDP Flood in Progress (4x100 Mbps for 30s) ==="
+

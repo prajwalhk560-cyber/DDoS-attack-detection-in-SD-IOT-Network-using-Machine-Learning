@@ -1,0 +1,23 @@
+Model Evaluation
+
+Random Forest
+
+Accuracy : 95.8 %
+
+Precision : 95.2 %
+
+Recall : 95.5 %
+
+F1 Score : 95.3 %
+
+----------------------------
+
+Decision Tree
+
+Accuracy : 93.9 %
+
+Precision : 93.1 %
+
+Recall : 93.5 %
+
+F1 Score : 93.2 %
